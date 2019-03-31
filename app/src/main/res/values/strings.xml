@@ -1,0 +1,29 @@
+<resources>
+	<string name="app_name">Уроки Рамадана</string>
+
+	<string name="action_favorites">Избранное</string>
+	<string name="action_night_mode">Ночной режим</string>
+	<string name="action_settings">Настройки</string>
+	<string name="action_about_us">О нас</string>
+	<string name="action_rate">Оценить</string>
+	<string name="action_share">Поделиться</string>
+	<string name="action_exit">Выход</string>
+
+	<string name="action_chapter_list">Список глав</string>
+	<string name="action_favorite_is_empty">Избранных глав нет</string>
+
+    <string name="share_to">Поделиться через:</string>
+    <string name="about_us_text">
+		<b>JMApps</b> - серия бесплатных и безрекламных андроид-приложений для мусульман.\n\n
+
+		Вы можете следить за обновлением старых и изданием новых приложений в наших соцсетях:\n\n
+
+		ВКонтакте: www.vk.com/JMApps\n
+		Telegram: t.me/JMApps\n
+		Facebook: www.facebook.com/JMAppsM\n
+		Instagram: www.instagram.com/dev_muslim\n\n
+
+		По всем вопросам, предложениям и скритикой можете писать нам на почту:\n\n
+
+		JMAppsMuslim@gmail.com или в Telegram: t.me/JMBikk</string>
+</resources>

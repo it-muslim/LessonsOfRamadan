@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/lightWhite</item>
+    </style>
+
+    <style name="CardViewStyle" parent="CardView">
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="BottomSheet" parent="Theme.Design.Light.BottomSheetDialog"/>
+
+    <style name="ThemeSplash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">#5C6BC0</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

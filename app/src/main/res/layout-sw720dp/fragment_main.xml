@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.ui.mainScreen.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/pbScrollCount"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvChapterNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/cambria"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/tbBookmarkState"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvChapterTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/cambria"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tbBookmarkState"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChapterNumber" />
+
+        <ToggleButton
+            android:id="@+id/tbBookmarkState"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/favorite_checked_state"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="@+id/tvChapterTitle"
+            app:layout_constraintEnd_toStartOf="@+id/btnShareContent"
+            app:layout_constraintTop_toTopOf="@+id/tvChapterNumber"
+            app:layout_constraintVertical_bias="0.272" />
+
+        <Button
+            android:id="@+id/btnShareContent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shared_pressed_state"
+            app:layout_constraintBottom_toBottomOf="@+id/tbBookmarkState"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tbBookmarkState" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nvMainContentScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvMainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/cambria"
+            android:padding="8dp"
+            android:textSize="25sp" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
